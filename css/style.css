@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+
+header .logo img{
+    width: 50px;
+    height: 50px;
+}
+header nav {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    padding: 16px 24px;
+    align-items: center; 
+}
+header nav ul {
+    display: flex;
+    list-style: none ;
+    justify-content: space-between;
+    
+}
+.button{
+    border: 1px solid black;
+    padding: 5px 10px;
+ 
+}
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    
+}
+header nav ul li a:hover{
+    color: rgb(168, 27, 27);
+}
+
+@media only screen and (max-width: 600px) {
+    header nav{
+        flex-direction: column;
+        font-size: 9px;
+    }
+    .logo{
+        margin-bottom: 10px;
+    }
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 100px;
+}
+main p{
+    padding: 10px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    main h1{
+        font-size: 15px;
+       text-align: center;
+    }
+    main p{
+        font-size: 10px;
+    }
+    
+}
+.mySlides {display: none}
+img {
+    vertical-align: middle;
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 600px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.profil,
+.visimisi,
+.achievement,
+.fasilitas,
+.message {
+  padding: 4rem 7% 1.4rem;
+}
+
+.profil h2,
+.visimisi h2,
+.achievement h2,
+.fasilitas h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(108, 111, 255);
+}
+
+.profil h2 span,
+.visimisi h2 span,
+.achievement h2 span,
+.fasilitas h2 span {
+  color: var(--secondary);
+}
+
+.profil .row {
+  display: flex;
+}
+
+.profil .row .profil-img {
+  flex: 1 1 35rem;
+}
+
+.profil .row .profil-img img {
+  width: 80%;
+}
+
+.profil .row .content {
+  flex: 1 1 45rem;
+}
+
+.profil .row .content h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(108, 111, 255);
+}
+
+.profil .row .content table,tr,td {
+    font-family: "calibri";
+    color: black;
+  
+}
+
+.profil .row .content ol li {
+  margin-bottom: 0.8rem;
+  margin-left: 0.9rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.6;
+  font-family: "Poppins";
+}
+.profil .row .content p {
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 100;
+    line-height: 1.6;
+    font-family: "Poppins";
+  }
+@media only screen and (max-width: 600px) {
+    .profil{font-size: 8px}
+    .profil h2{font-size: 20px;}
+    .profil .row .content h3 {font-size: 15px;}
+    
+      
+  }
+.isivisi {
+    padding:10px 10px;
+}
+.visimisi ol{
+    padding:10px 30px;
+}
+.visimisi li{
+    padding:0px 0px 10px 0px;
+}
+div.gallery {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .responsive {
+      width: 100%;
+    }
+    .achievement h2{
+        font-size: 20px;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ .fasilitas .row {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-between;
+  }
+  .fasilitas .row .fasilitas-card {
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+  
+  .fasilitas .row .fasilitas-card img {
+    width: 50%;
+    border-radius: 50%;
+    border: 4px solid black;
+  }
+  
+  .fasilitas .row .fasilitas-card .fasilitas-card-title {
+    margin: 1.5rem auto 0.5rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .fasilitas .row {
+      flex-direction: column;
+    }
+    .fasilitas h2{
+        font-size: 20px;
+    }
+
+  }
+.message{
+    font-family: 'Courier New', Courier, monospace;
+  }
+.message .row{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+.textarea{
+    width: 100%;
+}
+  
+  button[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .form-input {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin-top: 20px;
+    padding: 10px;
+    width: 50%;
+  }
+.table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    height:200px;
+    padding: 50px 24px;
+    border: 2px solid black;
+}
+.table td{
+    padding: 0px 0px 0px 0px;
+}
+@media only screen and (max-width: 600px) {
+    .message .row{
+        flex-direction: column;
+    
+    }
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+  }
