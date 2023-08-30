@@ -1,5 +1,5 @@
-
-
+let name = prompt("Masukkan Nama Anda...","");
+document.getElementById("name").innerHTML=name
 let slideIndex = 1;
 showSlides(slideIndex);
 
